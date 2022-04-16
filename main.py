@@ -17,7 +17,7 @@ if __name__ == '__main__':
     
     # get delegate order
     delegates = client.delegates.all()
-    print(delegates)
+    print(delegates['data'][0])
     
     
     # get current voter information
