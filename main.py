@@ -9,6 +9,7 @@ if __name__ == '__main__':
     f = open(milestone)
     data = json.load(f)
     reward_dict = {int(k):v for k, v in data[2]['dynamicReward']['ranks'].items()}
+    print(reward_dict)
        
     # get current voter information
     # do math and calculations
