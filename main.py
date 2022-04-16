@@ -3,7 +3,7 @@ from pathlib import Path
 from util.util import Util
 
 if __name__ == '__main__':
-
+    delegate_number = 53
     utility = Util()
     client = utility.get_client(6003)
     
@@ -17,11 +17,11 @@ if __name__ == '__main__':
     
     # get delegate order
     delegates = client.delegates.all()
-    print(delegates['data'][0]['username'])
-    print(delegates['data'][0]['rank'])
-    print(delegates['data'][0]['votes'])
-    
-    
+    for i in delegates['data']:
+        print(['username'])
+        print(['rank'])
+        print(['votes'])
+        
     # get current voter information
     # do math and calculations
     # output something
