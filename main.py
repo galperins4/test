@@ -17,11 +17,11 @@ if __name__ == '__main__':
     
     # get delegate order
     delegates = client.delegates.all()
+    delegate_list = {}
     for i in delegates['data'][:delegate_number]:
-        print(i['username'])
-        print(i['rank'])
-        print(i['votes'])
-        
+        delegate_list['i['username']] = {'rank': i['rank'], 'votes': i['votes']}
+
+    print(delegate_list)        
     # get current voter information
     # do math and calculations
     # output something
