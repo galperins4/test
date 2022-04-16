@@ -17,7 +17,7 @@ if __name__ == '__main__':
     
     # get delegate order
     delegates = client.delegates.all()
-    for i in delegates['data']:
+    for i in delegates['data'] while i < delegate_number:
         print(i['username'])
         print(i['rank'])
         print(i['votes'])
