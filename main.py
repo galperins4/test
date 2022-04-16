@@ -4,7 +4,7 @@ from util.util import Util
 
 if __name__ == '__main__':
 
-    utility = Util(data.network)
+    utility = Util()
     client = utility.get_client(6003)
     
     # get block rewards
