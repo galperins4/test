@@ -1,8 +1,12 @@
 import json
 from pathlib import Path
+from util.util import Util
 
 if __name__ == '__main__':
 
+    utility = Util(data.network)
+    client = utility.get_client(6003)
+    
     # get block rewards
     home = str(Path.home())
     milestone = home + "/solar-core/packages/crypto/src/networks/mainnet/milestones.json"
