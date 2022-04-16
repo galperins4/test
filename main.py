@@ -16,7 +16,7 @@ if __name__ == '__main__':
     print(reward_dict)
     
     # get delegate order
-    delegates = client.delegates()
+    delegates = client.delegates.all()
     print(delegates)
     
     
