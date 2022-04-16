@@ -18,9 +18,9 @@ if __name__ == '__main__':
     # get delegate order
     delegates = client.delegates.all()
     for i in delegates['data']:
-        print(['username'])
-        print(['rank'])
-        print(['votes'])
+        print(i['username'])
+        print(i['rank'])
+        print(i['votes'])
         
     # get current voter information
     # do math and calculations
