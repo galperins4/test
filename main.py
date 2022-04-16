@@ -6,8 +6,6 @@ if __name__ == '__main__':
     # get block rewards
     home = str(Path.home())
     milestone = home + "/solar-core/packages/crypto/src/networks/mainnet/milestones.json"
-    print(milestone)
-    quit()
     f = open(milestone)
     data = json.load(f)
     
