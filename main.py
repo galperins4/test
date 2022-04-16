@@ -14,7 +14,12 @@ if __name__ == '__main__':
     data = json.load(f)
     reward_dict = {int(k):v for k, v in data[2]['dynamicReward']['ranks'].items()}
     print(reward_dict)
-       
+    
+    # get delegate order
+    delegates = client.delegates()
+    print(delegates)
+    
+    
     # get current voter information
     # do math and calculations
     # output something
