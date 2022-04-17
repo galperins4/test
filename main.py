@@ -18,8 +18,7 @@ if __name__ == '__main__':
     delegates = client.delegates.all()
     delegate_list = {}
     for i in delegates['data'][:delegate_number]:
-        delegate_list[i['username']] = {'rank': i['rank'], 'votes': i['votes'],
-                                   'block reward': reward_dict[i['rank']]}
+        delegate_list[i['username']] = {'rank': i['rank'], 'votes': i['votes']}
 
     for k, v in delegate_list.items():
         print(k, v['votes'])
