@@ -21,7 +21,8 @@ if __name__ == '__main__':
         delegate_list[i['username']] = {'rank': i['rank'], 'votes': i['votes'],
                                    'block reward': reward_dict[i['rank']]}
 
-    print(delegate_list)        
+    for i in delegate_list:
+        print(i, i['votes'])
     # get current voter information
     # do math and calculations
     # output something
